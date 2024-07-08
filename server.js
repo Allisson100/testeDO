@@ -10,8 +10,8 @@ const app = express();
 
 const httpsSever = https.createServer(
   {
-    key: fs.readFileSync("keys/127.0.0.1-key.pem", "utf8"),
-    cert: fs.readFileSync("keys/127.0.0.1.pem", "utf8"),
+    key: fs.readFileSync("keys/key.pem", "utf8"),
+    cert: fs.readFileSync("keys/cert.pem", "utf8"),
   },
   app
 );
